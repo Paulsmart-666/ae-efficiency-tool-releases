@@ -1,0 +1,8 @@
+{
+  "version": "3.7.0",
+  "released_at": "2025-07-28",
+  "summary": "Ae效率工具 v3.7.0：新增面板内在线更新",
+  "changelog": "### Added\n- **面板内在线更新（参考 tdrive `插件本体.zip` 的 Supabase 更新台模式，自研实现）**：\n  - 顶部状态行新增「🔄 检查更新」胶囊按钮；有新版时按钮变橙黄 + 边缘脉动，并带 ● 红点提示。\n  - 点击打开「检查更新」弹窗：展示当前/最新版本、发布时间、包大小、更新说明；点「⬇ 下载并应用」即下载远端整包 zip。\n  - 下载带进度条（fetch + stream reader 实时百分比）；用 vendored `jszip.min.js` 在面板内解压，逐文件写入 CEP 扩展目录（`AppData\\Roaming\\Adobe\\CEP\\extensions\\com.aeEfficiencyTool.panel.Main\\`）。\n  - 写盘前对每个 zip 条目做 `path.normalize` + 越界检查，拒绝任何逃出扩展目录的 `../` 路径，杜绝 zip 穿越攻击。\n  - 解压完成后弹「🎉 已更新到 vX.Y.Z」，引导用户在 AE 顶部「三条杠」菜单 → 重新载入脚本（或重启 AE）让新代码生效——**不自动 reload**，避免面板闪断。\n  - 错误路径齐全：无法连接更新服务器（retry）、下载 HTTP 失败、解压失败、写入 `EACCES` 权限不足，全部落到红色 alert 卡片，**且不改动现有任何文件**。\n- **更新服务端 = 独立公开仓库 `Paulsmart-666/ae-efficiency-tool-releases`**：只放 `latest.json`（版本/下载 URL/包大小/说明）+ 各版本 release zip，不放源码。面板匿名 fetch，零依赖。\n- **发布脚本 `release-pack.sh`**（私有仓根目录）：读 `version.txt` → 打包 `Ae效率工具/` + `version.txt` 成 zip → `gh release create` 到公开仓 → 更新根 `latest.json` → 回拉校验。\n\n### Changed\n- `Ae效率工具/js/main.js` 启动时（`init()` 之后）调 `window.ae.updater.bootstrap()`；`APP_VERSION` 同步暴露到 `window.__AE_APP_VERSION__`。",
+  "zip_url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v3.7.0/ae-efficiency-tool-v3.7.0.zip",
+  "zip_size": 114328
+}
