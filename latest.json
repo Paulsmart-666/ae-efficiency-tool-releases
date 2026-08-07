@@ -1,6 +1,6 @@
 {
-  "version": "4.4.2",
-  "zip_url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v4.4.2/ae-efficiency-tool-v4.4.2.zip",
-  "zip_size": 154166,
-  "summary": "## v4.4.2 热修复\n- 修复 v4.4.1 发布包文件命名错误：CSInterface.js / version.js / jszip.min.js 被误加 .obf 后缀，导致 AE 连接失败与反复提示更新。\n- 重新打包：仅混淆 main.js / host.jsx / updater.js，库文件保持原名。"
+  "version": "4.3.4",
+  "zip_url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v4.3.4/ae-efficiency-tool-v4.3.4.zip",
+  "zip_size": 205429,
+  "summary": "## [4.3.4] - 当前版本 🐛 修复数字累加预合成层非 0 帧动画错位\n\n### Fixed\n- **数字累加坐标系错位**：`host.jsx` 的 `AeEff_buildCounterExpr` 生成的累加表达式以 innerComp 时间为基准（`time`），却与预合成层（外层）的 layer marker 时间（outerComp 时间）比较；预合成层从 0 帧往后拖动后两者相差 `startTime`，导致数字累加点整体错位。改为 `t = time + pc.startTime`，将 innerComp 时间换算成 outerComp 时间，预合成层置于任意位置数字累加均准确。弹动表达式（`AeEff_buildScaleExpr`）本身挂在外层预合成层、时间系一致，无需改动。"
 }
