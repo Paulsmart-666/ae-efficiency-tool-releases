@@ -1,6 +1,6 @@
 {
-  "version": "4.4.3",
-  "zip_url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v4.4.3/ae-efficiency-tool-v4.4.3.zip",
-  "zip_size": 218961,
-  "summary": "### Fixed\n- 批量序列导入导致 AE 卡死：扫描已迁 Node 层，但一次性全量导入仍会阻塞 AE 主线程；改为逐条分片导入，每次 evalScript 只导一条序列，避免 eval 超时。"
+  "version": "4.4.2",
+  "zip_url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v4.4.2/ae-efficiency-tool-v4.4.2.zip",
+  "zip_size": 216857,
+  "summary": "### Fixed\n- 批量序列导入扫描导致 AE 卡死：扫描与命名校验从 ExtendScript 迁到 CEP 的 Node 层（main.js 的 biScanNode），不占用 AE evalScript 时间片；增加最大扫描深度（6 层）、最大序列数（500 条）、隐藏目录过滤等安全护栏；仅把最终合规清单传给 AE 执行导入。"
 }
