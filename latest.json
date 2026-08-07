@@ -1,6 +1,6 @@
 {
-  "version": "4.4.1",
-  "zip_url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v4.4.1/ae-efficiency-tool-v4.4.1.zip",
-  "zip_size": 108473,
-  "summary": "## v4.4.1 热修复\n- 修复批量序列导入在 Windows 含空格/中文路径下扫描失败（ERR:no_folder）。\n- 路径统一正斜杠穿越 CEP/ExtendScript，显示转回 Windows 反斜杠。"
+  "version": "4.4.2",
+  "zip_url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v4.4.2/ae-efficiency-tool-v4.4.2.zip",
+  "zip_size": 154166,
+  "summary": "## v4.4.2 热修复\n- 修复 v4.4.1 发布包文件命名错误：CSInterface.js / version.js / jszip.min.js 被误加 .obf 后缀，导致 AE 连接失败与反复提示更新。\n- 重新打包：仅混淆 main.js / host.jsx / updater.js，库文件保持原名。"
 }
