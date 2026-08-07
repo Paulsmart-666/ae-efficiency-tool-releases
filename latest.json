@@ -1,1 +1,6 @@
-{"version": "4.4.1", "url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v4.4.1/ae-efficiency-tool-v4.4.1.zip", "size": 108473, "notes": "## v4.4.1 热修复\n- 修复批量序列导入在 Windows 含空格/中文路径下扫描失败（ERR:no_folder）。\n- 路径统一正斜杠穿越 CEP/ExtendScript，显示转回 Windows 反斜杠。"}
+{
+  "version": "4.4.1",
+  "zip_url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v4.4.1/ae-efficiency-tool-v4.4.1.zip",
+  "zip_size": 108473,
+  "summary": "## v4.4.1 热修复\n- 修复批量序列导入在 Windows 含空格/中文路径下扫描失败（ERR:no_folder）。\n- 路径统一正斜杠穿越 CEP/ExtendScript，显示转回 Windows 反斜杠。"
+}
