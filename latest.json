@@ -1,6 +1,6 @@
 {
-  "version": "4.4.1",
-  "zip_url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v4.4.1/ae-efficiency-tool-v4.4.1.zip",
-  "zip_size": 311829,
-  "summary": "### Fixed\n- 修复系统级 CEP 目录更新 EPERM：主目录不可写时自动降级写入用户级目录，并提供迁移指引。\n- 新增发布规范到 CODEBUDDY.md，统一 release 命名与混淆包发布流程。"
+  "version": "4.4.2",
+  "zip_url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v4.4.2/ae-efficiency-tool-v4.4.2.zip",
+  "zip_size": 216857,
+  "summary": "### Fixed\n- 批量序列导入扫描导致 AE 卡死：扫描与命名校验从 ExtendScript 迁到 CEP Node 层，避免大目录阻塞 AE 主线程。"
 }
