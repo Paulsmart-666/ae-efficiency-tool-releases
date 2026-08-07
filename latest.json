@@ -1,6 +1,1 @@
-{
-  "version": "4.3.4",
-  "zip_url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v4.3.4/ae-efficiency-tool-v4.3.4.zip",
-  "zip_size": 205429,
-  "summary": "## [4.3.4] - 当前版本 🐛 修复数字累加预合成层非 0 帧动画错位\n\n### Fixed\n- **数字累加坐标系错位**：`host.jsx` 的 `AeEff_buildCounterExpr` 生成的累加表达式以 innerComp 时间为基准（`time`），却与预合成层（外层）的 layer marker 时间（outerComp 时间）比较；预合成层从 0 帧往后拖动后两者相差 `startTime`，导致数字累加点整体错位。改为 `t = time + pc.startTime`，将 innerComp 时间换算成 outerComp 时间，预合成层置于任意位置数字累加均准确。弹动表达式（`AeEff_buildScaleExpr`）本身挂在外层预合成层、时间系一致，无需改动。"
-}
+{"version": "4.4.0", "zip_url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v4.4.0/ae-efficiency-tool-v4.4.0.zip", "zip_size": 139890, "summary": "## [4.4.0] - 当前版本\n\n### Added\n- **批量序列导入（工程目录 tab 第⑥步，位于工程降级上方）**：一键选择母文件夹，递归扫描子文件夹，按 `类型_分类_主题_名称-状态_编号.png` 严格命名规则校验（不符合即标红跳过），预览清单确认后批量以序列方式导入 AE，并按本地层级（主题→素材→状态）在工程内自动建 bin。"}
