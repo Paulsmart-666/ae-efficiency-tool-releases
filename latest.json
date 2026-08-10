@@ -1,6 +1,6 @@
 {
   "version": "4.4.7",
   "zip_url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v4.4.7/ae-efficiency-tool-v4.4.7.zip",
-  "zip_size": 224026,
-  "summary": "更新器安全化：覆盖写实测 + 红点循环抑制"
+  "zip_size": 224336,
+  "summary": "更新器安全化 + 重新打包修复混淆产物"
 }
