@@ -1,8 +1,8 @@
 {
-  "version": "5.0.6",
-  "zip_url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v5.0.6/ae-efficiency-tool.zip",
-  "sha256": "27ec979efa49cc80f4b3e7b041d2d1a9f8d97e5c6d78e9ce0c2f7d6a5b4c3e2d1",
-  "size": 145408,
+  "version": "5.0.7",
+  "zip_url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v5.0.7/ae-efficiency-tool.zip",
+  "sha256": "84b4c6b080c633014ae82835e107749e8d576a84c72931497bd3851d7e1609b9",
+  "size": 146254,
   "date": "2026-08-10",
-  "changelog": "修复导出帧在Half/Quarter预览下仍缩水"
+  "changelog": "导出帧Half/Quarter预览根因修正+Release标题格式"
 }
