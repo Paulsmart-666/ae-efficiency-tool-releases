@@ -1,6 +1,8 @@
 {
-  "version": "4.4.7",
-  "zip_url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v4.4.7/ae-efficiency-tool-v4.4.7.zip",
-  "zip_size": 222518,
-  "summary": "基于 4.4.5 覆盖发布：4.4.2 连接体验 + 4.4.4 品牌区 + 4.4.5 修复"
+  "version": "4.4.6",
+  "zip_url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v4.4.6/ae-efficiency-tool-v4.4.6.zip",
+  "zip_size": 218534,
+  "summary": "回退 4.4.2 + 4.4.5 修复：扫描回 host.jsx 桥接（ae 链接），保留 4.4.3/4.4.4 UI",
+  "released_at": "2026-08-10",
+  "changelog": "## [4.4.6] - 当前版本\n\n### Changed\n- 回退 4.4.2 的批量序列导入扫描修复：扫描逻辑从 CEP Node 层（biScanNode）还原回 host.jsx 桥接（即 4.4.2 之前的 ae 链接方式）。\n- 回退 4.4.5 的全部 bug 修复（S-01/S-02/S-03、C-01~C-07、W-04、R-02/R-04/R-06、#B、AeEff_updateGroupMeta 兜底）：host.jsx / main.js / updater.js 回到 4.4.5 前形态，保留 4.4.1 的 EPERM 更新修复。\n- 保留 4.4.3 / 4.4.4 面板视觉改版（品牌区、选项卡、CSS 变量主题）不变。\n- 版本号四处同步 4.4.6。"
 }
