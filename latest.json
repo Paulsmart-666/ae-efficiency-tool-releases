@@ -1,1 +1,6 @@
-{"version": "4.4.7", "zip_url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v4.4.7/ae-efficiency-tool-v4.4.7.zip", "zip_size": 223215, "summary": "修复强制连接AE失败 + 更新器循环/host写坏回归（v4.4.7）"}
+{
+  "version": "4.4.6",
+  "zip_url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v4.4.6/ae-efficiency-tool-v4.4.6.zip",
+  "zip_size": 222412,
+  "summary": "恢复顶部选项卡均分布局（v4.4.6）"
+}
