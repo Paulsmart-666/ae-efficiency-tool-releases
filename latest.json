@@ -1,6 +1,6 @@
 {
   "version": "4.4.7",
   "zip_url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v4.4.7/ae-efficiency-tool-v4.4.7.zip",
-  "zip_size": 224336,
-  "summary": "更新器安全化 + 重新打包修复混淆产物"
+  "zip_size": 222518,
+  "summary": "基于 4.4.5 覆盖发布：4.4.2 连接体验 + 4.4.4 品牌区 + 4.4.5 修复"
 }
