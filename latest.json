@@ -1,7 +1,1 @@
-{
-  "version": "5.0.2",
-  "zip_url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v5.0.2/ae-efficiency-tool-v5.0.2.zip",
-  "zip_size": 221889,
-  "sha256": "ce75187ec2706a8fcdc9c3d669d94675a2e05ca75e60b12a66cc5e3d56d51148",
-  "summary": "导出帧直存下载目录 + 批量替换绿色+号图标"
-}
+{"version": "5.0.3", "zip_url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v5.0.3/ae-efficiency-tool-v5.0.3.zip", "zip_size": 221186, "sha256": "dcd392bc08c30a95ff16bc1be7bb35765b8e0e9e6b9d0d76d511c006ad0a86ee", "summary": "修复导出帧 saveFrameToPNG 未定义 + 强制全分辨率输出"}
