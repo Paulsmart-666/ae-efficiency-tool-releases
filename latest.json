@@ -1,8 +1,8 @@
 {
   "version": "5.0.4",
   "released_at": "2026-08-11",
-  "summary": "Ae效率工具 v5.0.4 更新包（修复导出帧首次误报失败）",
-  "changelog": "### Fixed\n- **导出帧按钮增加防重入锁**：连点「导出单帧 PNG」时可能重复覆盖同一文件；`main.js` 增加 `efExporting` 锁，导出进行中文案提示「导出进行中，请稍候…」。\n- **修复导出帧首次点击误报「导出失败」且需二次点击才成功（真正根因）**：上一版对 `host.jsx` 的 exists 重查未命中真正问题——首次导出时 `comp.resolutionFactor=[1,1]` 强制全分辨率渲染该帧 + PNG 编码耗时较长，CEP 的 `evalScript` 是同步阻塞调用，15s 超时后前端收到 `ERR:eval_timeout` 而 AE 仍在后台完成 `saveFrameToPng` 写入文件，造成「文件已生成但面板报失败、再点一次才成功并覆盖」的假象。`main.js` 将导出超时提高到 30s，并在超时/异常兜底时调用新增的 `AeEff_frameFileExists` 复查文件是否真实落盘，存在即判成功，彻底消除首次误报。（注：上一版 `host.jsx` 的 exists 重查保留为冗余保险，无害。）",
+  "summary": "Ae效率工具 v5.0.4 更新包（修复导出帧首次误报失败：前端轮询确认落盘）",
+  "changelog": "### Fixed\n- **导出帧按钮增加防重入锁**：连点「导出单帧 PNG」时可能重复覆盖同一文件；`main.js` 增加 `efExporting` 锁，导出进行中文案提示「导出进行中，请稍候…」。\n- **修复导出帧首次点击误报「导出失败」且需二次点击才成功（最终根因，换思路）**：根因是 `comp.saveFrameToPng` 调用返回时文件**并不保证已落盘**——AE 把渲染+写盘交给后台管线，时机不确定。原代码在 `saveFrameToPng` 之后**立即同步 `f.exists`**：第一次命中「文件尚未写出」→ 返回 `ok:false` → 面板误报失败（但 AE 后台随后写完，所以\"第一次其实已成功\"）；第二次旧文件已存在 → `exists=true` → 成功并覆盖。前两轮（exists 重查、evalScript 30s 超时兜底）都未命中此根因。本轮改为：`host.jsx` 导出前先删除目标文件（避免轮询命中上次残留）、`saveFrameToPng` 后只返回「已发起保存」；`main.js` 不再用同步 exists 判定，改为**前端轮询 `AeEff_frameFileExists` 每 600ms 一次、最多 15s**，文件真正出现即判成功。轮询不阻塞 AE 主线程，AE 可正常完成写盘，首次点击即正确显示成功，无需二次点击，也不再覆盖。",
   "zip_url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v5.0.4/ae-efficiency-tool-v5.0.4.zip",
-  "zip_size": 221468
+  "zip_size": 308613
 }
