@@ -1,6 +1,6 @@
 {
   "version": "5.0.3",
   "zip_url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v5.0.3/ae-efficiency-tool-v5.0.3.zip",
-  "zip_size": 306236,
+  "zip_size": 313061,
   "summary": "导出帧改用Render Queue强制全分辨率，彻底修复undefined报错与Half/Quarter预览缩水"
 }
