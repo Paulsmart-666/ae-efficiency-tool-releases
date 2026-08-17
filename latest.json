@@ -1,8 +1,1 @@
-{
-  "version": "5.1.0",
-  "released_at": "2026-08-17",
-  "summary": "Ae效率工具 v5.1.0 更新包",
-  "changelog": "### Added\n- **新增「字幕」tab（复刻 whitedove 字幕助手）**：创建字幕层（文本框按行 + 标记驱动翻行表达式）、按 marker 拆分字幕为独立段层、检查字数（阈值默认 20，超长行汇总）。\n",
-  "zip_url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v5.1.0/ae-efficiency-tool-v5.1.0.zip",
-  "zip_size": 276877
-}
+{"version": "5.1.1", "zip_url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v5.1.1/ae-efficiency-tool-v5.1.1.zip", "zip_size": 286467, "changelog": "修复字幕功能错误处理 + 加固混淆配置", "released_at": "2026-08-17T05:25:41Z"}
