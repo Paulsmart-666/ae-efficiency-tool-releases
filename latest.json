@@ -1,6 +1,6 @@
 {
-  "version": "5.1.2",
-  "zip_url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v5.1.2/ae-efficiency-tool-v5.1.2.zip",
-  "zip_size": 287491,
-  "changelog": "fix: CEP兼容性修复 - 去掉base64混淆编码和死代码注入，解决字幕功能ReferenceError"
+  "version": "5.1.1",
+  "zip_url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v5.1.1/ae-efficiency-tool-v5.1.1.zip",
+  "zip_size": 192519,
+  "changelog": "fix: 字幕回退重做（复刻whitedove）+ 混淆关闭stringArray运行时解码，解决CEP环境ReferenceError"
 }
