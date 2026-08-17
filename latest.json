@@ -1,8 +1,8 @@
 {
-  "version": "5.0.6",
+  "version": "5.1.0",
   "released_at": "2026-08-17",
-  "summary": "Ae效率工具 v5.0.6 更新包",
-  "changelog": "### Changed\n- **TTS 文本框高度优化**：文本输入框从 5 行压缩至 2 行（max-height:52px，超出可滚动），降低面板总高度。\n- **模型配置区可折叠**：稳定性/相似度/风格/语速滑块及 Speaker Boost 改为可折叠区域，默认收起，点击「⚙ 模型配置 ▶」展开。\n",
-  "zip_url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v5.0.6/ae-efficiency-tool-v5.0.6.zip",
-  "zip_size": 220632
+  "summary": "Ae效率工具 v5.1.0 更新包",
+  "changelog": "### Added\n- **新增「字幕」tab（复刻 whitedove 字幕助手）**：创建字幕层（文本框按行 + 标记驱动翻行表达式）、按 marker 拆分字幕为独立段层、检查字数（阈值默认 20，超长行汇总）。\n",
+  "zip_url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v5.1.0/ae-efficiency-tool-v5.1.0.zip",
+  "zip_size": 276877
 }
