@@ -1,6 +1,6 @@
 {
   "version": "5.1.1",
   "zip_url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v5.1.1/ae-efficiency-tool-v5.1.1.zip",
-  "zip_size": 192519,
-  "changelog": "fix: 字幕回退重做（复刻whitedove）+ 混淆关闭stringArray运行时解码，解决CEP环境ReferenceError"
+  "zip_size": 187522,
+  "changelog": "fix: 修复字幕拆分TextDocument.split崩溃 + 混淆变量mangled命名优化"
 }
