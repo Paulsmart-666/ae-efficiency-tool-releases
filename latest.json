@@ -1,1 +1,8 @@
-{"version": "5.6.0", "tag": "v5.6.0", "url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v5.6.0/ae-efficiency-tool-v5.6.0.zip", "date": "2026-08-28", "notes": "v5.6.0 stable rollback"}
+{
+  "version": "5.6.0",
+  "tag": "v5.6.0",
+  "url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v5.6.0/ae-efficiency-tool-v5.6.0.zip",
+  "zip_size": 532730,
+  "date": "2026-08-28",
+  "summary": "- 表达式库 TXT 格式导入导出\n- 内置表达式全量补齐至 8 条（手指按下/弹起、标记按下、倒计时、数字跳动等）\n- 导入兼容旧 .json 备份；导出的 TXT 可直接重新导入还原"
+}
