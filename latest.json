@@ -1,8 +1,8 @@
 {
-  "version": "5.7.4",
-  "zip_url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v5.7.4/ae-efficiency-tool-v5.7.4.zip",
-  "zip_size": 240639,
-  "summary": "## Fixed\n- **修复面板从老版本更新失败的问题**：根因是更新器目录检测时未对 URL 编码路径进行解码，导致同一个中文扩展目录被重复检测为两个目录，写入与校验目录不一致，最终 version.txt 校验失败、更新回滚。已在目录去重前增加 decodeURIComponent 解码，确保同目录只识别一次。\n- **写入后延迟校验**：写入文件后增加 800ms 延迟再校验，避免 Windows 文件系统缓存导致校验时读到旧版本号。",
-  "changelog": "## Fixed\n- **修复面板从老版本更新失败的问题**：根因是更新器目录检测时未对 URL 编码路径进行解码，导致同一个中文扩展目录被重复检测为两个目录，写入与校验目录不一致，最终 version.txt 校验失败、更新回滚。已在目录去重前增加 decodeURIComponent 解码，确保同目录只识别一次。\n- **写入后延迟校验**：写入文件后增加 800ms 延迟再校验，避免 Windows 文件系统缓存导致校验时读到旧版本号。",
+  "version": "5.7.5",
+  "zip_url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v5.7.5/ae-efficiency-tool-v5.7.5.zip",
+  "zip_size": 237205,
+  "summary": "## Fixed\n- **修复打包时 version.txt 不一致的问题**：根目录 `version.txt` 与 `Ae效率工具/version.txt` 版本不一致，导致打包进 zip 的 `Ae效率工具/version.txt` 为旧版本号，更新校验时期望新版本但读到旧版本，校验失败。已统一两处版本号，并在大审查检查项中增加打包一致性校验。\n- **完善审查规则**：CODING_RULES.md 新增大审查触发条件、检查项清单、执行流程、修复后再审查规则、审查报告格式规范；删除重复的 CODEBUDDY.md，统一以 CODING_RULES.md 为唯一权威规则文件。",
+  "changelog": "## Fixed\n- **修复打包时 version.txt 不一致的问题**：根目录 `version.txt` 与 `Ae效率工具/version.txt` 版本不一致，导致打包进 zip 的 `Ae效率工具/version.txt` 为旧版本号，更新校验时期望新版本但读到旧版本，校验失败。已统一两处版本号，并在大审查检查项中增加打包一致性校验。\n- **完善审查规则**：CODING_RULES.md 新增大审查触发条件、检查项清单、执行流程、修复后再审查规则、审查报告格式规范；删除重复的 CODEBUDDY.md，统一以 CODING_RULES.md 为唯一权威规则文件。",
   "min_ae_version": "22.0"
 }
