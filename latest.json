@@ -1,7 +1,7 @@
 {
   "version": "5.7.4",
   "zip_url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v5.7.4/ae-efficiency-tool-v5.7.4.zip",
-  "zip_size": 236223,
+  "zip_size": 240639,
   "summary": "## Fixed\n- **修复面板从老版本更新失败的问题**：根因是更新器目录检测时未对 URL 编码路径进行解码，导致同一个中文扩展目录被重复检测为两个目录，写入与校验目录不一致，最终 version.txt 校验失败、更新回滚。已在目录去重前增加 decodeURIComponent 解码，确保同目录只识别一次。\n- **写入后延迟校验**：写入文件后增加 800ms 延迟再校验，避免 Windows 文件系统缓存导致校验时读到旧版本号。",
   "changelog": "## Fixed\n- **修复面板从老版本更新失败的问题**：根因是更新器目录检测时未对 URL 编码路径进行解码，导致同一个中文扩展目录被重复检测为两个目录，写入与校验目录不一致，最终 version.txt 校验失败、更新回滚。已在目录去重前增加 decodeURIComponent 解码，确保同目录只识别一次。\n- **写入后延迟校验**：写入文件后增加 800ms 延迟再校验，避免 Windows 文件系统缓存导致校验时读到旧版本号。",
   "min_ae_version": "22.0"
