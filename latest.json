@@ -1,8 +1,13 @@
 {
-  "version": "5.7.2",
-  "zip_url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v5.7.2/ae-efficiency-tool-v5.7.2.zip",
-  "zip_size": 237095,
-  "summary": "## Changed\n- 时间码面板「标记偏移」第一行 UI 调整为类别与帧数五五分（左右各占 50%），避免类别下拉过宽。\n- 修复 CHANGELOG 高亮标签违规问题。",
-  "changelog": "## Changed\n- 时间码面板「标记偏移」第一行 UI 调整为类别与帧数五五分（左右各占 50%），避免类别下拉过宽。\n- 修复 CHANGELOG 高亮标签违规问题。",
-  "min_ae_version": "22.0"
+  "version": "5.7.3",
+  "released_at": "2026-08-30",
+  "summary": "内置表达式库更新为 6 个",
+  "changelog": [
+    {
+      "type": "Changed",
+      "text": "内置表达式库更新为 6 个：清除旧版 8 个内置表达式，替换为用户提供的最新版本（拿起/放下/消除、按下/弹起、标记按下、倒计时、数字跳动、按下/弹起【核玩工具】）。"
+    }
+  ],
+  "zip_url": "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v5.7.3/ae-efficiency-tool-v5.7.3.zip",
+  "zip_size": 239533
 }
