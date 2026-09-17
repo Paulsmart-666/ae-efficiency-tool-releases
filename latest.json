@@ -1,5 +1,5 @@
 {
-    "zip_url":  "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v5.8.3/ae-efficiency-tool-v5.8.3.zip",
-    "version":  "5.8.3",
-    "changelog":  "Added: 批量替换棋子的贴图/底图新增「从磁盘选」按钮；Fixed: 修复替换素材源 evalAE 命名冲突覆盖时间码偏移功能"
+    "zip_url":  "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v5.8.4/ae-efficiency-tool-v5.8.4.zip",
+    "version":  "5.8.4",
+    "changelog":  "Changed: 替换素材源从磁盘选的新素材导入到04_Picture递增子文件夹"
 }
