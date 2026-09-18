@@ -1,6 +1,6 @@
 {
-    "zip_url":  "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v5.8.6/ae-efficiency-tool-v5.8.6.zip",
-    "version":  "5.8.6",
-    "zip_size":  403086,
-    "changelog":  "Changed: 替换素材源从磁盘选改回不导入；贴图底图从磁盘选改为按类别名归档到04_Picture"
+    "zip_url":  "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v5.8.7/ae-efficiency-tool-v5.8.7.zip",
+    "version":  "5.8.7",
+    "zip_size":  434473,
+    "changelog":  "Changed: 生长动画缩放逻辑改为基于图层当前缩放值，不再强制回到100%"
 }
