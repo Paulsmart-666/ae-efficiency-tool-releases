@@ -1,6 +1,6 @@
 {
     "zip_url":  "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v5.8.7/ae-efficiency-tool-v5.8.7.zip",
     "version":  "5.8.7",
-    "zip_size":  434982,
-    "changelog":  "Changed: 生长动画基于图层当前缩放值; Fixed: 修复Property.value阻塞主线程导致AE未连接"
+    "zip_size":  423025,
+    "changelog":  "Changed: 生长动画基于图层当前缩放值; Fixed: host.jsx改为不混淆发布"
 }
