@@ -1,6 +1,6 @@
 {
-    "zip_url":  "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v5.8.6/ae-efficiency-tool-v5.8.6.zip",
-    "version":  "5.8.6",
-    "zip_size":  403086,
-    "changelog":  "Changed: 替换素材源从磁盘选改回不导入；贴图底图从磁盘选改为按类别名归档到04_Picture"
+    "zip_url":  "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v5.8.7/ae-efficiency-tool-v5.8.7.zip",
+    "version":  "5.8.7",
+    "zip_size":  434753,
+    "changelog":  "Fixed: 从磁盘选增加跨次查重；Changed: 替换素材源成功弹窗改为自定义模态框；Changed: 执行成功后自动清空所有列表"
 }
