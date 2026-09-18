@@ -1,5 +1,5 @@
 {
-    "zip_url":  "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v5.8.5/ae-efficiency-tool-v5.8.5.zip",
-    "version":  "5.8.5",
-    "changelog":  "Fixed: 贴图底图从磁盘选导入的素材统一放入04_Picture递增子文件夹"
+    "zip_url":  "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v5.8.6/ae-efficiency-tool-v5.8.6.zip",
+    "version":  "5.8.6",
+    "changelog":  "Changed: 替换素材源从磁盘选改回不导入；贴图底图从磁盘选改为按类别名归档到04_Picture"
 }
