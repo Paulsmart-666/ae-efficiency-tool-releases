@@ -1,6 +1,6 @@
 {
-    "zip_url":  "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v5.8.7/ae-efficiency-tool-v5.8.7.zip",
-    "version":  "5.8.7",
-    "zip_size":  434753,
-    "changelog":  "Fixed: 从磁盘选增加跨次查重；Changed: 替换素材源成功弹窗改为自定义模态框；Changed: 执行成功后自动清空所有列表"
+    "zip_url":  "https://github.com/Paulsmart-666/ae-efficiency-tool-releases/releases/download/v5.8.8/ae-efficiency-tool-v5.8.8.zip",
+    "version":  "5.8.8",
+    "zip_size":  434830,
+    "changelog":  "Fixed: 修复v5.8.7性能问题(MutationObserver导致卡顿/AE未连接)，改为轻量轮询"
 }
